@@ -1,11 +1,25 @@
 A report of steps taken and reasoning 
 
-We downloaded the dataset. 
+We downloaded the dataset from https://data.sandiego.gov/datasets/police-nibrs/.
 
-We cleaned the dataset, removing cols that didn't have relevant info 
+*Data Cleaning*
 
-We chose to remove columns from consideration that didn't have crimes with clear labels 
+We removed columns that didn't have relevant information. The columns we kept are:
+'case_number': San Diego Police Department Case Number used for tracking purposes within the SDPD's records management system.
+'occured_on': 
+'pd_offense_category':
+'neighborhood':
+'division':
+'city': the city the crime occurred in
+'latitude':
+'longitude'
+
+
+We removed rows with "All Other Offenses" for its offense category ?? from consideration that didn't have crimes with clear labels 
+
+
+*Exploratory Data Analysis*
 
 We looked at neighborhoods with most crime 
 
-We looked at times of day where the most crime happened 
+We looked at times of day where the most crime happened
