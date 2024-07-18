@@ -23,5 +23,3 @@ We removed rows with "All Other Offenses" for its offense category ?? from consi
 We looked at neighborhoods with most crime 
 
 We looked at times of day where the most crime happened
-
-hi
