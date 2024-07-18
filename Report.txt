@@ -1,0 +1,11 @@
+A report of steps taken and reasoning 
+
+We downloaded the dataset. 
+
+We cleaned the dataset, removing cols that didn't have relevant info 
+
+We chose to remove columns from consideration that didn't have crimes with clear labels 
+
+We looked at neighborhoods with most crime 
+
+We looked at times of day where the most crime happened 
