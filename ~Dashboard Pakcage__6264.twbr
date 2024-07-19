@@ -1,0 +1,1647 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0618.0924                               -->
+<workbook original-version='18.1' source-build='2024.1.4 (20241.24.0618.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='crimes' inline='true' name='federated.14mcpgv1gj47uh1c8lxwe1w65r2b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='crimes' name='textscan.0a6frme1v699bw18wqamb1naq5l3'>
+            <connection class='textscan' directory='C:/Users/Hao Zhang/Documents/GitHub/San-Diego-Crime-Analysis' filename='crimes.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0a6frme1v699bw18wqamb1naq5l3' name='crimes.csv' table='[crimes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='case_number' ordinal='1' />
+            <column datatype='datetime' name='occured_on' ordinal='2' />
+            <column datatype='string' name='pd_offense_category' ordinal='3' />
+            <column datatype='string' name='neighborhood' ordinal='4' />
+            <column datatype='string' name='division' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='real' name='latitude' ordinal='7' />
+            <column datatype='real' name='longitude' ordinal='8' />
+            <column datatype='integer' name='hour of day' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0a6frme1v699bw18wqamb1naq5l3' name='crimes.csv' table='[crimes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='case_number' ordinal='1' />
+            <column datatype='datetime' name='occured_on' ordinal='2' />
+            <column datatype='string' name='pd_offense_category' ordinal='3' />
+            <column datatype='string' name='neighborhood' ordinal='4' />
+            <column datatype='string' name='division' ordinal='5' />
+            <column datatype='string' name='city' ordinal='6' />
+            <column datatype='real' name='latitude' ordinal='7' />
+            <column datatype='real' name='longitude' ordinal='8' />
+            <column datatype='integer' name='hour of day' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[case_number]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>case_number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occured_on</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[occured_on]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>occured_on</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pd_offense_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pd_offense_category]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>pd_offense_category</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighborhood]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>neighborhood</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>division</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[division]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>division</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour of day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour of day]</local-name>
+            <parent-name>[crimes.csv]</parent-name>
+            <remote-alias>hour of day</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='crimes.csv' datatype='table' name='[__tableau_internal_object_id__].[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]' role='measure' type='quantitative' />
+      <column caption='Case Number' datatype='integer' name='[case_number]' role='dimension' type='ordinal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Division' datatype='string' name='[division]' role='dimension' type='nominal' />
+      <column caption='Hour Of Day' datatype='integer' name='[hour of day]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+      <column caption='Occured On' datatype='datetime' name='[occured_on]' role='dimension' type='ordinal' />
+      <column caption='Pd Offense Category' datatype='string' name='[pd_offense_category]' role='dimension' type='nominal' />
+      <column-instance column='[occured_on]' derivation='Hour' name='[hr:occured_on:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[occured_on]' derivation='MY' name='[my:occured_on:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[pd_offense_category]' derivation='None' name='[none:pd_offense_category:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0vh9o0902svftj14178l30yoz305.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/18/2024 05:10:37 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>crimes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>296565</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>case_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[case_number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_number</remote-alias>
+              <ordinal>1</ordinal>
+              <family>crimes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>253433</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occured_on</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[occured_on]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occured_on</remote-alias>
+              <ordinal>2</ordinal>
+              <family>crimes.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>210282</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pd_offense_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pd_offense_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pd_offense_category</remote-alias>
+              <ordinal>3</ordinal>
+              <family>crimes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>neighborhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[neighborhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>neighborhood</remote-alias>
+              <ordinal>4</ordinal>
+              <family>crimes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>204</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>division</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[division]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>division</remote-alias>
+              <ordinal>5</ordinal>
+              <family>crimes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>6</ordinal>
+              <family>crimes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>7</ordinal>
+              <family>crimes.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43564</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>8</ordinal>
+              <family>crimes.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43564</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hour of day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hour of day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hour of day</remote-alias>
+              <ordinal>9</ordinal>
+              <family>crimes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[hr:occured_on:ok]' type='palette'>
+            <map to='#000000'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#000000'>
+              <bucket>23</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[my:occured_on:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>202009</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>202205</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>202401</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>202001</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>202109</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>202305</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>202005</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>202201</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>202309</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>202101</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>202209</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>202405</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>202010</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>202206</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>202402</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>202006</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>202202</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>202310</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>202107</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>202303</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>202002</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>202110</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>202306</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>202105</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>202301</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>202007</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>202203</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>202311</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>202102</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>202210</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>202406</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>202103</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>202211</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>202407</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>202106</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>202302</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>202108</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>202304</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>202011</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>202207</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>202403</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>202008</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>202204</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>202312</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>202003</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>202111</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>202307</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>202104</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>202212</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>202012</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>202208</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>202404</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>202004</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>202112</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>202308</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:pd_offense_category:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Fraud/Counterfeiting&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aggravated Assault&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Simple Assault&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Burglary/Breaking &amp; Entering&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Weapon Law Violations&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kidnapping/Abduction&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Gambling Violations&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Curfew/Loitering/Vagrancy Violations&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Robbery&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alcohol Violations&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Stolen Property Offenses&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Pornography/Obscene Material&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Disorderly Conduct&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Larceny&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Motor Vehicle Theft&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Prostitution&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sexual Assault&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Homicide&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Drug/Narcotic Violations&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Animal Cruelty&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Theft From Motor Vehicle&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Other Sex Offenses&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Intimidation&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arson&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vandalism&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='crimes.csv' id='crimes.csv_85AA9D9036844DEB82137A2F1DB0A5F5'>
+            <properties context=''>
+              <relation connection='textscan.0a6frme1v699bw18wqamb1naq5l3' name='crimes.csv' table='[crimes#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='case_number' ordinal='1' />
+                  <column datatype='datetime' name='occured_on' ordinal='2' />
+                  <column datatype='string' name='pd_offense_category' ordinal='3' />
+                  <column datatype='string' name='neighborhood' ordinal='4' />
+                  <column datatype='string' name='division' ordinal='5' />
+                  <column datatype='string' name='city' ordinal='6' />
+                  <column datatype='real' name='latitude' ordinal='7' />
+                  <column datatype='real' name='longitude' ordinal='8' />
+                  <column datatype='integer' name='hour of day' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='hate_crimes_filtered' inline='true' name='federated.04cfhf81nto86o15wzx65189jk3t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hate_crimes_filtered' name='textscan.08qk1pq0jhohgj186j43a141u6iz'>
+            <connection class='textscan' directory='C:/Users/Hao Zhang/Documents/GitHub/San-Diego-Crime-Analysis' filename='hate_crimes_filtered.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08qk1pq0jhohgj186j43a141u6iz' name='hate_crimes_filtered.csv' table='[hate_crimes_filtered#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='case_number' ordinal='1' />
+            <column datatype='datetime' name='occured_on' ordinal='2' />
+            <column datatype='string' name='neighborhood' ordinal='3' />
+            <column datatype='integer' name='hour of day' ordinal='4' />
+            <column datatype='integer' name='year' ordinal='5' />
+            <column datatype='integer' name='month' ordinal='6' />
+            <column datatype='string' name='motivation' ordinal='7' />
+            <column datatype='real' name='latitude' ordinal='8' />
+            <column datatype='real' name='longitude' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08qk1pq0jhohgj186j43a141u6iz' name='hate_crimes_filtered.csv' table='[hate_crimes_filtered#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='case_number' ordinal='1' />
+            <column datatype='datetime' name='occured_on' ordinal='2' />
+            <column datatype='string' name='neighborhood' ordinal='3' />
+            <column datatype='integer' name='hour of day' ordinal='4' />
+            <column datatype='integer' name='year' ordinal='5' />
+            <column datatype='integer' name='month' ordinal='6' />
+            <column datatype='string' name='motivation' ordinal='7' />
+            <column datatype='real' name='latitude' ordinal='8' />
+            <column datatype='real' name='longitude' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[case_number]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>case_number</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occured_on</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[occured_on]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>occured_on</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighborhood]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>neighborhood</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour of day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour of day]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>hour of day</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>motivation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[motivation]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>motivation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[hate_crimes_filtered.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='hate_crimes_filtered.csv' datatype='table' name='[__tableau_internal_object_id__].[hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46]' role='measure' type='quantitative' />
+      <column caption='Case Number' datatype='integer' name='[case_number]' role='dimension' type='ordinal' />
+      <column caption='Hour Of Day' datatype='integer' name='[hour of day]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Motivation' datatype='string' name='[motivation]' role='dimension' type='nominal' />
+      <column caption='Neighborhood' datatype='string' name='[neighborhood]' role='dimension' type='nominal' />
+      <column caption='Occured On' datatype='datetime' name='[occured_on]' role='dimension' type='ordinal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[motivation]' derivation='None' name='[none:motivation:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp 1/#TableauTemp_1rggfga0nyfnnh1635fmg0p3zqgi.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/18/2024 06:28:04 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>256</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>case_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[case_number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_number</remote-alias>
+              <ordinal>1</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>186</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occured_on</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[occured_on]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occured_on</remote-alias>
+              <ordinal>2</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>186</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>neighborhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[neighborhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>neighborhood</remote-alias>
+              <ordinal>3</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hour of day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hour of day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hour of day</remote-alias>
+              <ordinal>4</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>6</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>motivation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[motivation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>motivation</remote-alias>
+              <ordinal>7</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>8</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>176</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>hate_crimes_filtered.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>176</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:motivation:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gender&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sexual Orientation&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Religion&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Race&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='hate_crimes_filtered.csv' id='hate_crimes_filtered.csv_234A99B9A7AC4C069410202D1BC55A46'>
+            <properties context=''>
+              <relation connection='textscan.08qk1pq0jhohgj186j43a141u6iz' name='hate_crimes_filtered.csv' table='[hate_crimes_filtered#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='case_number' ordinal='1' />
+                  <column datatype='datetime' name='occured_on' ordinal='2' />
+                  <column datatype='string' name='neighborhood' ordinal='3' />
+                  <column datatype='integer' name='hour of day' ordinal='4' />
+                  <column datatype='integer' name='year' ordinal='5' />
+                  <column datatype='integer' name='month' ordinal='6' />
+                  <column datatype='string' name='motivation' ordinal='7' />
+                  <column datatype='real' name='latitude' ordinal='8' />
+                  <column datatype='real' name='longitude' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Crimes by Category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimes' name='federated.14mcpgv1gj47uh1c8lxwe1w65r2b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mcpgv1gj47uh1c8lxwe1w65r2b'>
+            <column caption='Case Number' datatype='integer' name='[case_number]' role='dimension' type='ordinal' />
+            <column-instance column='[case_number]' derivation='Count' name='[cnt:case_number:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pd_offense_category]' derivation='None' name='[none:pd_offense_category:nk]' pivot='key' type='nominal' />
+            <column caption='Pd Offense Category' datatype='string' name='[pd_offense_category]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[cnt:case_number:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[cnt:case_number:qk]' scope='cols' value='Number of Cases' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]</rows>
+        <cols>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[cnt:case_number:qk]</cols>
+      </table>
+      <simple-id uuid='{60954662-5B4A-45C3-B23D-879784821C37}' />
+    </worksheet>
+    <worksheet name='Hate Crimes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hate_crimes_filtered' name='federated.04cfhf81nto86o15wzx65189jk3t' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.04cfhf81nto86o15wzx65189jk3t'>
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Motivation' datatype='string' name='[motivation]' role='dimension' type='nominal' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[motivation]' derivation='None' name='[none:motivation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04cfhf81nto86o15wzx65189jk3t].[none:motivation:nk]'>
+            <groupfilter function='level-members' level='[none:motivation:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04cfhf81nto86o15wzx65189jk3t].[none:motivation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.04cfhf81nto86o15wzx65189jk3t].[none:longitude:qk]' field-type='quantitative' max='-13028446.19606212' min='-13058070.103625793' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.04cfhf81nto86o15wzx65189jk3t].[none:latitude:qk]' field-type='quantitative' max='3868998.1666763951' min='3853452.4104118859' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Heatmap' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Latitude:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.04cfhf81nto86o15wzx65189jk3t].[none:latitude:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Longitude:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.04cfhf81nto86o15wzx65189jk3t].[none:longitude:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Motivation:&#9;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='density-color' palette='density_light_multicolor' type='interpolated' />
+                <format attr='density-intensity' value='0.44696044921875' />
+                <format attr='mark-transparency' value='178' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.04cfhf81nto86o15wzx65189jk3t].[none:latitude:qk]</rows>
+        <cols>[federated.04cfhf81nto86o15wzx65189jk3t].[none:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{A890E217-3F83-4729-BE5A-CA38E371A508}' />
+    </worksheet>
+    <worksheet name='Heatmap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimes' name='federated.14mcpgv1gj47uh1c8lxwe1w65r2b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.14mcpgv1gj47uh1c8lxwe1w65r2b'>
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pd_offense_category]' derivation='None' name='[none:pd_offense_category:nk]' pivot='key' type='nominal' />
+            <column caption='Pd Offense Category' datatype='string' name='[pd_offense_category]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]'>
+            <groupfilter function='level-members' level='[none:pd_offense_category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:longitude:qk]' field-type='quantitative' max='-13000358.129343642' min='-13088976.668067852' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:latitude:qk]' field-type='quantitative' max='3906028.7259605643' min='3828774.6382565713' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]' value='Offense Category'>
+              <formatted-text>
+                <run>Offense Category</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Heatmap' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='density-color' palette='density_light_multicolor' type='interpolated' />
+                <format attr='density-intensity' value='0.44696044921875' />
+                <format attr='mark-transparency' value='178' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:latitude:qk]</rows>
+        <cols>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{84F42C06-CADF-4F42-981D-AAB09B82CFF1}' />
+    </worksheet>
+    <worksheet name='Trends Hour'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimes' name='federated.14mcpgv1gj47uh1c8lxwe1w65r2b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mcpgv1gj47uh1c8lxwe1w65r2b'>
+            <column-instance column='[occured_on]' derivation='Hour' name='[hr:occured_on:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[pd_offense_category]' derivation='None' name='[none:pd_offense_category:nk]' pivot='key' type='nominal' />
+            <column caption='Occured On' datatype='datetime' name='[occured_on]' role='dimension' type='ordinal' />
+            <column-instance column='[pd_offense_category]' derivation='Count' name='[pcto:cnt:pd_offense_category:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Pd Offense Category' datatype='string' name='[pd_offense_category]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]'>
+            <groupfilter function='member' level='[none:pd_offense_category:nk]' member='&quot;Aggravated Assault&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[pcto:cnt:pd_offense_category:qk]</rows>
+        <cols>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[hr:occured_on:ok]</cols>
+      </table>
+      <simple-id uuid='{23D6E6BD-1518-4125-B814-2916C8D2CABA}' />
+    </worksheet>
+    <worksheet name='Trends Month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='crimes' name='federated.14mcpgv1gj47uh1c8lxwe1w65r2b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14mcpgv1gj47uh1c8lxwe1w65r2b'>
+            <column-instance column='[pd_offense_category]' derivation='Count' name='[cnt:pd_offense_category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[occured_on]' derivation='MY' name='[my:occured_on:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[pd_offense_category]' derivation='None' name='[none:pd_offense_category:nk]' pivot='key' type='nominal' />
+            <column caption='Occured On' datatype='datetime' name='[occured_on]' role='dimension' type='ordinal' />
+            <column caption='Pd Offense Category' datatype='string' name='[pd_offense_category]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]'>
+            <groupfilter function='member' level='[none:pd_offense_category:nk]' member='&quot;Aggravated Assault&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[cnt:pd_offense_category:qk]</rows>
+        <cols>[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[my:occured_on:ok]</cols>
+      </table>
+      <simple-id uuid='{9439F8DA-BDF5-43A1-9832-81BFC96C0EEA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='1820' minheight='560' minwidth='1820' sizing-mode='range' />
+      <datasources>
+        <datasource caption='crimes' name='federated.14mcpgv1gj47uh1c8lxwe1w65r2b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.14mcpgv1gj47uh1c8lxwe1w65r2b'>
+        <column-instance column='[pd_offense_category]' derivation='None' name='[none:pd_offense_category:nk]' pivot='key' type='nominal' />
+        <column caption='Pd Offense Category' datatype='string' name='[pd_offense_category]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97780' id='7' param='horz' type-v2='layout-flow' w='49559' x='440' y='1110'>
+            <zone h='97780' id='5' type-v2='layout-basic' w='40768' x='440' y='1110'>
+              <zone h='97780' id='3' name='Heatmap' w='40768' x='440' y='1110'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97780' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='8791' x='41208' y='1110'>
+              <zone h='9709' id='8' mode='checkdropdown' name='Heatmap' param='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]' type-v2='filter' w='8791' x='41208' y='1110'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='97780' id='9' name='Trends Hour' w='49561' x='49999' y='1110'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{650C98D2-97E9-4523-8058-4865CB38B3D2}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='75'>
+    <window class='worksheet' name='Trends Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC305AA0-2EAD-452D-AF12-01A264E64E99}' />
+    </window>
+    <window class='worksheet' name='Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C447E2DA-76F2-4E82-BF53-D9B6287FD817}' />
+    </window>
+    <window class='worksheet' name='Trends Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.14mcpgv1gj47uh1c8lxwe1w65r2b].[none:pd_offense_category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7982E59C-3DDE-45CE-86B4-FE5545ADA069}' />
+    </window>
+    <window class='worksheet' name='Hate Crimes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.04cfhf81nto86o15wzx65189jk3t].[none:motivation:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CBEB56D2-A236-41ED-8EDC-79780931DD84}' />
+    </window>
+    <window class='worksheet' name='Crimes by Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{94E61CD2-022D-48E5-8E68-25821E9BD0E5}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Trends Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{48669A48-F0BD-4885-ACFC-DCF295127FF1}' />
+    </window>
+  </windows>
+</workbook>
