@@ -12,7 +12,7 @@ We removed columns that didn't have relevant information. The columns we kept ar
 - `latitude`: the latitude the offense occurred in
 - `longitude`: the longitude the offense occurred in
 
-Specifically, `pd_offense_category` consists of various crime types and a category called ‘All Other Offenses’. We removed rows labeled as ‘All Other Offenses’ since the label did not give sufficient information about the specific type of crime that occurred.
+Specifically, `pd_offense_category` consists of various crime types and a category called 'All Other Offenses'. We removed rows labeled as 'All Other Offenses' since the label did not give sufficient information about the specific type of crime that occurred.
 
 ## Exploratory Data Analysis
 To begin our EDA, we started by finding the neighborhoods with the most crime occurrences. We found that neighborhoods like East Village, Pacific Beach, and the Midway District had the most crime occurrences. This makes sense since these areas are the downtown areas in San Diego. 
